@@ -1,0 +1,46 @@
+class emp{
+    String name;
+    int id;
+    int salary;
+    static int dept_no;     //static data member
+    
+    void setdata(String n,int i,int s)  
+    {
+        name=n;
+        id=i;
+        salary=s;
+        
+    }
+    
+    static void setdept_no(int n)        //static member function 
+    {
+        dept_no=n;
+    }
+    
+    void show()
+    {
+        System.out.println("name:"+name+",id:"+id+",salary:"+salary+",dept_no:"+dept_no);
+        
+    }
+}
+
+public class Test
+{
+    public static void main(String[]args)
+    {
+        emp e1=new emp();
+        emp e2=new emp();
+        emp e3=new emp();
+        
+        e1.setdata("Rahul",10,5000);
+        e2.setdata("Krishna",11,11000);
+        e3.setdata("karan",12,7000);
+        
+        emp.setdept_no(100);
+        System.out.println("Given Employee Details:");
+        e1.show();
+        e2.show();
+        e3.show();
+    }
+}
+    
