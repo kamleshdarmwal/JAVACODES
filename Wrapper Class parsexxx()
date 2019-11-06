@@ -1,0 +1,11 @@
+public class Example
+{
+    public static void main(String[] args)
+    {
+        int a=Integer.parseInt("123");
+        double b=Double.parseDouble("13.45");
+        
+
+       System.out.println("a:"+a+",b:"+b);
+    }
+}
