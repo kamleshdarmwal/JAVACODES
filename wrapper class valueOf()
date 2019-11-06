@@ -1,0 +1,10 @@
+public class Example
+{
+    public static void main(String[] args)
+    {
+        Integer i1=Integer.valueOf("123");
+        Double d1=Double.valueOf("3.14");
+        Integer i2=Integer.valueOf("101011",2);
+       System.out.println("i1:"+i1+",d1:"+d1+",i2:"+i2);
+    }
+}
