@@ -1,0 +1,26 @@
+class Example
+{
+	public static  void  f1()
+	{
+		System.out.println("hello");
+	}
+}
+class child extends Example{
+	public  static void  f1()
+	{
+		System.out.println("Yo YO man");
+	}
+
+
+}
+
+public class Parent{
+	public static void main(String[] args)
+	{
+		Example e=new child();
+		e.f1();
+		//child.f1();
+        //   Example.f1();
+
+	}
+}
