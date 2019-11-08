@@ -1,0 +1,49 @@
+class Example
+{
+	static int y=4;
+}
+class child extends Example
+{
+	
+	static
+	{
+		y=5;     //STATIC BLOCK
+	}
+}	
+
+public class Staticvar
+{
+	public static void main(String[] args)
+	{
+		System.out.println("y="+child.y);
+	}
+}
+OUTPUT===>  y=4
+==============================================================================================
+                                      EXAMPLE 2
+                                                                       
+  class Example
+{
+	
+}
+class child extends Example
+{
+	static int y=4;
+	
+	static
+	{
+		y=5;     //STATIC BLOCK
+	}
+}	
+
+public class Staticvar
+{
+	public static void main(String[] args)
+	{
+		System.out.println("y="+child.y);
+	}
+}
+
+
+OUTPUT====>  y=5
+                                      
